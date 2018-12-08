@@ -1,0 +1,10 @@
+version: '2.2'
+
+services:
+  chat_c:
+    image: chatster/api-chat-c
+    build: .
+    container_name: chat_c
+    ports:
+      - 5000:5000
+      - 2950:2950
